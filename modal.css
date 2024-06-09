@@ -1,0 +1,209 @@
+.modalContainer {
+  height: fit-content;
+}
+.modalBody {
+  height: 330px !important;
+  overflow-y: auto !important;
+  padding: 0;
+}
+.modalHeaderContainer {
+  padding: 0;
+  border-bottom: 0;
+}
+.modalHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 8px 5px;
+  background-color: var(--eula-header);
+}
+
+.modalContainerSuccess {
+  height: fit-content;
+  margin-top: 200px;
+}
+.modalHeaderSuccess {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee7a01;
+  text-align: center;
+  height: 100px;
+  color: var(--ground_color);
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.modalHeaderSuccessText {
+  max-width: 400px;
+}
+.modalBodySuccess {
+  height: 0px;
+  padding: 0;
+}
+.successIcon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin-right: 15px;
+}
+
+.logoContainer {
+  margin: auto 0;
+  display: flex;
+  width: 140px;
+  height: auto;
+}
+.verticalLine {
+  height: 2px;
+  width: 50px;
+  background-color: var(--disable-color);
+  margin: 5px;
+}
+.modalTitle {
+  text-align: center;
+  margin: auto 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.emailIcon {
+  width: auto;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.emailBox {
+  width: 100%;
+  min-height: 70px;
+  background-color: #ee7a01;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: var(--ground_color);
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.bodyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontalLine {
+  width: 100%;
+  height: 2px;
+  background-color: var(--disable-color);
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.bodyBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 25px;
+  max-width: 350px;
+  margin-top: 20px;
+}
+
+/* Email Confirmation Message */
+.confirmModal {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.confirmModalContainer {
+  height: fit-content;
+  margin-top: 200px;
+  -webkit-animation-name: none !important;
+  animation-name: none !important;
+  border: 0;
+}
+.confirmMessageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.confirmLoading {
+  background-color: var(--ground_color);
+  border-bottom: 0;
+}
+
+.confirmSuccess {
+  background-color: #d3efd9;
+  border-bottom: 0;
+}
+
+.confirmError {
+  background-color: #efd3d7;
+  border-bottom: 0;
+}
+
+.confirmSuccessIcon {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+  color: var(--success-color);
+}
+
+.confirmErrorIcon {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+  color: var(--error-color);
+}
+
+.confirmSuccessText {
+  color: var(--success-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+.confirmErrorText {
+  color: var(--error-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (min-width: 450px) {
+  .modalHeader {
+    flex-direction: row;
+  }
+
+  .verticalLine {
+    display: flex;
+    border-left: 2px solid var(--disable-color);
+    height: 35px;
+    margin: auto 20px;
+    width: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .modalContainer {
+    width: 600px;
+  }
+  .confirmModalContainer,
+  .modalContainerSuccess {
+    width: 600px;
+  }
+  .modalHeaderSuccess {
+    padding: 20px 40px;
+  }
+}
